@@ -1,0 +1,123 @@
+html, body, .grid-container { height: 100%; margin: 0; }
+
+.grid-container * { 
+  border: 2px solid black;
+  position: relative;
+}
+
+.grid-container {
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "Section-1 Section-1 Section-2 Section-3 Section-3 Section-4 Section-4 Section-4" "Section-1 Section-1 Section-2 Section-6 Section-6 Section-6 Section-7 Section-7" "Section-5 Section-5 Section-2 Section-6 Section-6 Section-6 Section-7 Section-7" "Section-9 Section-10 Section-10 Section-6 Section-6 Section-6 Section-11 Section-11" "Section-9 Section-10 Section-10 Section-12 Section-12 Section-12 Section-13 Section-13" "Section-9 Section-15 Section-15 Section-15 Section-16 Section-17 Section-17 Section-18" "Section-9 Section-15 Section-15 Section-15 Section-16 Section-17 Section-17 Section-20";
+}
+
+#section1 { grid-area: Section-1; 
+background-color: #f2ccee 
+}
+
+#section2 { grid-area: Section-2; 
+background-color: #acd7ed
+}
+
+#section3 { grid-area: Section-3; 
+background-color: #b8a6e1
+
+}
+
+#section5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: ". . ." "Section-8 Section-8 Section-8";
+  grid-area: Section-5;
+background-color: #bffcc6   
+}
+
+#section8 { 
+  grid-area: Section-8; 
+  border-width: 4px 0 0 0;
+background-color: #f6a6ff
+}
+
+#section4 { grid-area: Section-4; 
+background-color: #eda5c9
+  
+}
+
+#section6 {
+  grid-area: Section-6;
+background-color: #85e3ff
+}
+
+#section7 { grid-area: Section-7; 
+background-color: #fff5ba
+}
+
+#section10 { grid-area: Section-10; 
+background-color: #a79aff
+
+}
+
+#section11 { grid-area: Section-11; 
+background-color: #6eb5ff
+
+}
+
+#section12 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: ". . ." "Section-14 Section-14 Section-14";
+  grid-area: Section-12;
+background-color: #ffb5e8
+
+}
+
+#section14 { 
+  grid-area: Section-14; 
+  border-width: 4px 0 0 0;
+background-color: #f3ffe3
+
+}
+
+#section13 { grid-area: Section-13; 
+background-color: #b28dff
+  
+}
+
+#section15 { grid-area: Section-15; 
+background-color: #dcd3ff
+}
+
+#section16 { grid-area: Section-16; 
+background-color: #ffc9de
+}
+
+#section17 { grid-area: Section-17; 
+background-color: #ff9cee
+}
+
+#section9 { grid-area: Section-9; 
+background-color: #c4faf8
+}
+
+#section18 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: ". . Section-19" ". . Section-19";
+  grid-area: Section-18;
+background-color: #e7ffac
+}
+
+#section19 { 
+  grid-area: Section-19; 
+  border-width: 0 0 0 4px;
+background-color: #aff8db
+}
+
+#section20 { grid-area: Section-20; 
+background-color: #ffabab
+}
